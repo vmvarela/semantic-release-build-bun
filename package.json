@@ -1,0 +1,34 @@
+{
+  "name": "@vmvarela/semantic-release-build-bun",
+  "version": "0.0.0-development",
+  "description": "Build Bun/JS bundles for multiple targets during semantic-release",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "@vmvarela/semantic-release-shared": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@vmvarela/eslint-config": "^0.1.0",
+    "@vmvarela/tsconfig": "^0.1.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
